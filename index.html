@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brightmind Solutions — Finance Tracker</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F1F5F9;--bg2:#FFFFFF;--bg3:#F8FAFC;
+  --text:#0F172A;--text2:#475569;--text3:#94A3B8;
+  --border:#E2E8F0;--border2:#CBD5E1;
+  --green:#10B981;--green-dark:#059669;--green-light:#D1FAE5;--green-text:#065F46;
+  --red:#EF4444;--red-dark:#DC2626;--red-light:#FEE2E2;--red-text:#991B1B;
+  --amber:#F59E0B;--amber-light:#FEF3C7;--amber-text:#92400E;
+  --blue:#3B82F6;--blue-light:#DBEAFE;--blue-text:#1D4ED8;
+  --sidebar:#0F1923;--sidebar-border:rgba(255,255,255,0.08);
+  --card-shadow:0 1px 3px rgba(0,0,0,0.08);
+}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;overflow:hidden;height:100vh}
+.app{display:flex;height:100vh;overflow:hidden}
+
+/* Sidebar */
+.sidebar{width:220px;min-width:220px;background:var(--sidebar);display:flex;flex-direction:column;overflow:hidden}
+.brand{padding:20px 16px 16px;border-bottom:1px solid var(--sidebar-border)}
+.brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.brand-icon{width:32px;height:32px;background:linear-gradient(135deg,#10B981,#059669);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.brand-name{font-size:13px;font-weight:700;color:#fff;letter-spacing:0.3px}
+.brand-sub{font-size:11px;color:#64748B;margin-top:1px;padding-left:42px}
+.nav{flex:1;padding:10px 8px;overflow-y:auto}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;cursor:pointer;color:#94A3B8;font-size:13px;font-weight:500;margin-bottom:2px;transition:all 0.15s;border:none;background:none;width:100%;text-align:left}
+.nav-item:hover{background:rgba(255,255,255,0.07);color:#CBD5E1}
+.nav-item.active{background:rgba(16,185,129,0.15);color:#10B981}
+.nav-icon{font-size:15px;width:20px;text-align:center;flex-shrink:0}
+.sidebar-footer{padding:14px 16px;border-top:1px solid var(--sidebar-border)}
+.sidebar-footer-text{font-size:10px;color:#334155;line-height:1.6}
+
+/* Main */
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.topbar{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;justify-content:space-between;min-height:54px;flex-shrink:0;gap:12px}
+.topbar-left{display:flex;align-items:center;gap:14px;min-width:0}
+.page-title{font-size:15px;font-weight:700;white-space:nowrap}
+.month-nav{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.month-btn{background:none;border:1px solid var(--border2);border-radius:6px;width:26px;height:26px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text2);font-size:14px;transition:all 0.15s}
+.month-btn:hover{background:var(--bg);border-color:var(--text3)}
+.month-label{font-size:13px;font-weight:500;color:var(--text2);min-width:120px;text-align:center}
+.topbar-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.btn{border-radius:8px;padding:7px 14px;font-size:12px;font-weight:600;cursor:pointer;border:none;transition:all 0.15s;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.btn:active{transform:scale(0.97)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-dark)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-outline{background:none;border:1px solid var(--border2);color:var(--text2)}
+.btn-outline:hover{background:var(--bg);border-color:var(--text3)}
+.btn-sm{padding:5px 10px;font-size:11px}
+
+/* Content */
+.content{flex:1;overflow-y:auto;padding:20px;background:var(--bg)}
+
+/* Cards grid */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--bg2);border-radius:12px;border:1px solid var(--border);padding:16px;box-shadow:var(--card-shadow)}
+.card-label{font-size:11px;color:var(--text2);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
+.card-value{font-size:22px;font-weight:700}
+.card-sub{font-size:11px;color:var(--text3);margin-top:4px}
+.green{color:var(--green-dark)}.red{color:var(--red-dark)}.amber{color:var(--amber)}
+
+/* Chart */
+.chart-wrap{background:var(--bg2);border-radius:12px;border:1px solid var(--border);padding:18px;margin-bottom:20px;box-shadow:var(--card-shadow)}
+.chart-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.chart-title{font-size:13px;font-weight:600;color:var(--text2)}
+.legend{display:flex;gap:16px}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text2)}
+.legend-dot{width:8px;height:8px;border-radius:2px}
+.bar-chart{display:flex;align-items:flex-end;gap:6px;height:130px}
+.bar-group{flex:1;display:flex;flex-direction:column;align-items:center}
+.bar-group-bars{display:flex;gap:2px;align-items:flex-end;width:100%;justify-content:center}
+.bar{flex:1;border-radius:3px 3px 0 0;min-height:2px;transition:height 0.3s ease;max-width:18px}
+.bar-label{font-size:9px;color:var(--text3);text-align:center;margin-top:5px}
+
+/* Tables */
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.section-title{font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:0.6px}
+.table-wrap{background:var(--bg2);border-radius:12px;border:1px solid var(--border);overflow:hidden;box-shadow:var(--card-shadow)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--bg3);padding:10px 14px;text-align:left;font-size:10px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--bg3)}
+.total-row td{background:var(--bg3)!important;font-weight:700;border-top:1px solid var(--border2)}
+
+/* Badges */
+.badge{display:inline-block;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:700;white-space:nowrap}
+.badge-green{background:var(--green-light);color:var(--green-text)}
+.badge-red{background:var(--red-light);color:var(--red-text)}
+.badge-blue{background:var(--blue-light);color:var(--blue-text)}
+.badge-amber{background:var(--amber-light);color:var(--amber-text)}
+.badge-gray{background:var(--bg);color:var(--text2);border:1px solid var(--border)}
+
+/* Two-col */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+
+/* Modal */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:var(--bg2);border-radius:16px;padding:24px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;box-shadow:0 24px 64px rgba(0,0,0,0.25)}
+.modal-title{font-size:16px;font-weight:700;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-full{grid-column:1/-1}
+.form-group{display:flex;flex-direction:column;gap:5px}
+label{font-size:12px;font-weight:600;color:var(--text2)}
+input,select,textarea{font-size:13px;padding:8px 10px;border-radius:8px;border:1px solid var(--border2);background:var(--bg3);color:var(--text);width:100%;font-family:inherit;transition:border-color 0.15s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(16,185,129,0.12)}
+textarea{resize:vertical;min-height:64px}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+
+/* Empty state */
+.empty-state{text-align:center;padding:48px 20px;color:var(--text3)}
+.empty-state p{font-size:14px;margin-bottom:14px}
+
+/* Export section */
+.export-card{background:var(--bg2);border-radius:12px;border:1px solid var(--border);padding:20px;box-shadow:var(--card-shadow)}
+.export-btns{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.code-block{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px 14px;font-size:12px;color:var(--text2);line-height:1.8;margin-top:12px}
+.code-block code{font-family:'Courier New',monospace;color:var(--text);background:var(--border);padding:1px 5px;border-radius:4px;font-size:11px}
+
+/* HMRC block */
+.hmrc-card{background:var(--bg2);border-radius:12px;border:1px solid var(--border);border-left:4px solid var(--amber);padding:20px;margin-bottom:20px;box-shadow:var(--card-shadow)}
+.hmrc-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border)}
+.hmrc-row:last-child{border-bottom:none;padding-top:10px;margin-top:4px}
+
+/* Toast */
+.toast{position:fixed;bottom:24px;right:24px;padding:12px 20px;border-radius:10px;font-size:13px;font-weight:600;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.2);animation:slideUp 0.2s ease;display:flex;align-items:center;gap:8px}
+@keyframes slideUp{from{transform:translateY(16px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+/* Hidden file input */
+.hidden-file{display:none}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+
+<div class="app" id="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">
+        <div class="brand-icon">💼</div>
+        <div class="brand-name">Brightmind</div>
+      </div>
+      <div class="brand-sub">Finance Tracker</div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-text">
+        Data saved in your browser<br>
+        Export JSON to back up
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <span class="page-title" id="page-title">Dashboard</span>
+        <div class="month-nav" id="month-nav">
+          <button class="month-btn" onclick="prevMonth()" title="Previous month">‹</button>
+          <span class="month-label" id="month-label"></span>
+          <button class="month-btn" onclick="nextMonth()" title="Next month">›</button>
+        </div>
+      </div>
+      <div class="topbar-right" id="topbar-right"></div>
+    </div>
+    <div class="content" id="content">
+      <div style="text-align:center;padding:60px;color:var(--text3)">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════════════════════
+let income = [], expenses = [], tab = 'dashboard';
+let filterMonth = new Date().getMonth();
+let filterYear  = new Date().getFullYear();
+let toastTimer  = null;
+
+const MONTHS_FULL = ['January','February','March','April','May','June',
+                     'July','August','September','October','November','December'];
+const MONTHS_S    = ['Jan','Feb','Mar','Apr','May','Jun',
+                     'Jul','Aug','Sep','Oct','Nov','Dec'];
+const CATEGORIES  = ['Rent','Utilities','Teaching Materials','Stationery',
+                     'Marketing','Equipment','Software/Subscriptions',
+                     'Travel','Professional Fees','Insurance','Other'];
+const TIMING_MAP  = {
+  advance:       'Paid in Advance',
+  end_of_lesson: 'End of Lesson',
+  deferred:      'Deferred / Later'
+};
+const NAV = [
+  {id:'dashboard', icon:'▦',  label:'Dashboard'},
+  {id:'income',    icon:'↓',  label:'Income'},
+  {id:'expenses',  icon:'↑',  label:'Expenses'},
+  {id:'reports',   icon:'≡',  label:'Reports'},
+];
+
+// ═══════════════════════════════════════════════════════
+//  STORAGE  (localStorage — works everywhere incl. GitHub Pages)
+// ═══════════════════════════════════════════════════════
+function loadData() {
+  try {
+    const i = localStorage.getItem('bms_income_v2');
+    const e = localStorage.getItem('bms_expenses_v2');
+    if (i) income   = JSON.parse(i);
+    if (e) expenses = JSON.parse(e);
+  } catch(_) {}
+  render();
+}
+function saveIncome(data) {
+  income = data;
+  try { localStorage.setItem('bms_income_v2', JSON.stringify(data)); } catch(_) {}
+  render();
+}
+function saveExpenses(data) {
+  expenses = data;
+  try { localStorage.setItem('bms_expenses_v2', JSON.stringify(data)); } catch(_) {}
+  render();
+}
+
+// ═══════════════════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════════════════
+function uid() { return Date.now().toString(36) + Math.random().toString(36).substr(2,6); }
+function gbp(n) {
+  return '£' + parseFloat(n||0).toLocaleString('en-GB', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+function fmtDate(d) {
+  return d ? new Date(d + 'T00:00:00').toLocaleDateString('en-GB') : '';
+}
+function sum(arr) { return arr.reduce((s, x) => s + parseFloat(x.amount||0), 0); }
+function monthItems(arr) {
+  return arr.filter(x => {
+    const d = new Date(x.date);
+    return d.getMonth() === filterMonth && d.getFullYear() === filterYear;
+  });
+}
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function prevMonth() {
+  if (filterMonth === 0) { filterMonth = 11; filterYear--; } else filterMonth--;
+  render();
+}
+function nextMonth() {
+  if (filterMonth === 11) { filterMonth = 0; filterYear++; } else filterMonth++;
+  render();
+}
+
+// ═══════════════════════════════════════════════════════
+//  TOAST
+// ═══════════════════════════════════════════════════════
+function showToast(msg, type='success') {
+  const col = type === 'error' ? '#EF4444' : (type === 'info' ? '#3B82F6' : '#10B981');
+  const ico  = type === 'error' ? '✕' : '✓';
+  document.getElementById('toast-root').innerHTML =
+    `<div class="toast" style="background:${col};color:#fff"><span>${ico}</span>${esc(msg)}</div>`;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { document.getElementById('toast-root').innerHTML = ''; }, 3200);
+}
+
+// ═══════════════════════════════════════════════════════
+//  MODAL
+// ═══════════════════════════════════════════════════════
+function closeModal() { document.getElementById('modal-root').innerHTML = ''; }
+function openModal(html) { document.getElementById('modal-root').innerHTML = html; }
+
+// ═══════════════════════════════════════════════════════
+//  INCOME MODAL
+// ═══════════════════════════════════════════════════════
+function openIncomeModal(itemJSON) {
+  const item = itemJSON ? JSON.parse(decodeURIComponent(itemJSON)) : null;
+  const today = new Date().toISOString().split('T')[0];
+  const v = item || {date:today, student:'', amount:'', paymentMethod:'cash', paymentTiming:'end_of_lesson', notes:''};
+  openModal(`
+  <div class="overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <div class="modal-title">
+        <span>${item ? '✏️ Edit Income' : '➕ Add Income'}</span>
+        <button class="btn btn-outline btn-sm" onclick="closeModal()">✕</button>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Date *</label>
+          <input type="date" id="f-date" value="${v.date}">
+        </div>
+        <div class="form-group">
+          <label>Amount (£) *</label>
+          <input type="number" id="f-amount" value="${v.amount}" placeholder="0.00" step="0.01" min="0.01">
+        </div>
+        <div class="form-group form-full">
+          <label>Student Name *</label>
+          <input type="text" id="f-student" value="${esc(v.student)}" placeholder="e.g. James Smith">
+        </div>
+        <div class="form-group">
+          <label>Payment Method</label>
+          <select id="f-method">
+            <option value="cash"  ${v.paymentMethod==='cash' ?'selected':''}>💵 Cash</option>
+            <option value="bank"  ${v.paymentMethod==='bank' ?'selected':''}>🏦 Bank Transfer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Payment Timing</label>
+          <select id="f-timing">
+            <option value="end_of_lesson" ${v.paymentTiming==='end_of_lesson'?'selected':''}>End of Lesson</option>
+            <option value="advance"        ${v.paymentTiming==='advance'       ?'selected':''}>Paid in Advance</option>
+            <option value="deferred"       ${v.paymentTiming==='deferred'      ?'selected':''}>Deferred / Later</option>
+          </select>
+        </div>
+        <div class="form-group form-full">
+          <label>Notes</label>
+          <textarea id="f-notes" placeholder="e.g. 3 sessions together, A-Level Chemistry">${esc(v.notes||'')}</textarea>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+        <button class="btn btn-green" onclick="saveIncomeForm('${item ? esc(item.id) : ''}')">
+          ${item ? 'Update Income' : 'Add Income'}
+        </button>
+      </div>
+    </div>
+  </div>`);
+  document.getElementById('f-date').focus();
+}
+
+function saveIncomeForm(editId) {
+  const date    = document.getElementById('f-date').value.trim();
+  const amount  = parseFloat(document.getElementById('f-amount').value);
+  const student = document.getElementById('f-student').value.trim();
+  const method  = document.getElementById('f-method').value;
+  const timing  = document.getElementById('f-timing').value;
+  const notes   = document.getElementById('f-notes').value.trim();
+  if (!date || !student || isNaN(amount) || amount <= 0) {
+    showToast('Please fill in Date, Student and Amount', 'error'); return;
+  }
+  const entry = { id: editId || uid(), date, amount, student, paymentMethod: method, paymentTiming: timing, notes };
+  if (editId) saveIncome(income.map(i => i.id === editId ? entry : i));
+  else        saveIncome([...income, entry]);
+  closeModal();
+  showToast(editId ? 'Income updated' : 'Income recorded ✓');
+}
+
+function deleteIncome(id) {
+  if (!confirm('Delete this income entry?')) return;
+  saveIncome(income.filter(i => i.id !== id));
+  showToast('Deleted');
+}
+
+// ═══════════════════════════════════════════════════════
+//  EXPENSE MODAL
+// ═══════════════════════════════════════════════════════
+function openExpenseModal(itemJSON) {
+  const item = itemJSON ? JSON.parse(decodeURIComponent(itemJSON)) : null;
+  const today = new Date().toISOString().split('T')[0];
+  const v = item || {date:today, description:'', amount:'', paymentMethod:'cash', category:'Teaching Materials', notes:''};
+  openModal(`
+  <div class="overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <div class="modal-title">
+        <span>${item ? '✏️ Edit Expense' : '➕ Add Expense'}</span>
+        <button class="btn btn-outline btn-sm" onclick="closeModal()">✕</button>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Date *</label>
+          <input type="date" id="f-date" value="${v.date}">
+        </div>
+        <div class="form-group">
+          <label>Amount (£) *</label>
+          <input type="number" id="f-amount" value="${v.amount}" placeholder="0.00" step="0.01" min="0.01">
+        </div>
+        <div class="form-group form-full">
+          <label>Description *</label>
+          <input type="text" id="f-desc" value="${esc(v.description)}" placeholder="e.g. Whiteboard markers, Printer paper">
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select id="f-cat">
+            ${CATEGORIES.map(c => `<option ${v.category===c?'selected':''}>${c}</option>`).join('')}
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Payment Method</label>
+          <select id="f-method">
+            <option value="cash" ${v.paymentMethod==='cash'?'selected':''}>💵 Cash</option>
+            <option value="card" ${v.paymentMethod==='card'?'selected':''}>💳 Card</option>
+          </select>
+        </div>
+        <div class="form-group form-full">
+          <label>Notes</label>
+          <textarea id="f-notes" placeholder="Optional details">${esc(v.notes||'')}</textarea>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+        <button class="btn btn-red" onclick="saveExpenseForm('${item ? esc(item.id) : ''}')">
+          ${item ? 'Update Expense' : 'Add Expense'}
+        </button>
+      </div>
+    </div>
+  </div>`);
+  document.getElementById('f-date').focus();
+}
+
+function saveExpenseForm(editId) {
+  const date  = document.getElementById('f-date').value.trim();
+  const amount= parseFloat(document.getElementById('f-amount').value);
+  const desc  = document.getElementById('f-desc').value.trim();
+  const cat   = document.getElementById('f-cat').value;
+  const method= document.getElementById('f-method').value;
+  const notes = document.getElementById('f-notes').value.trim();
+  if (!date || !desc || isNaN(amount) || amount <= 0) {
+    showToast('Please fill in Date, Description and Amount', 'error'); return;
+  }
+  const entry = { id: editId || uid(), date, amount, description: desc, category: cat, paymentMethod: method, notes };
+  if (editId) saveExpenses(expenses.map(e => e.id === editId ? entry : e));
+  else        saveExpenses([...expenses, entry]);
+  closeModal();
+  showToast(editId ? 'Expense updated' : 'Expense recorded ✓');
+}
+
+function deleteExpense(id) {
+  if (!confirm('Delete this expense?')) return;
+  saveExpenses(expenses.filter(e => e.id !== id));
+  showToast('Deleted');
+}
+
+// ═══════════════════════════════════════════════════════
+//  EXPORT / IMPORT
+// ═══════════════════════════════════════════════════════
+function exportJSON() {
+  const blob = new Blob([JSON.stringify({income, expenses, exportDate: new Date().toISOString()}, null, 2)], {type:'application/json'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'BMS_finance_data.json'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('JSON exported — use with Python script for coloured Excel', 'info');
+}
+
+function importJSON(e) {
+  const file = e.target.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const data = JSON.parse(ev.target.result);
+      if (data.income)   saveIncome(data.income);
+      if (data.expenses) saveExpenses(data.expenses);
+      showToast(`Imported ${(data.income||[]).length} income + ${(data.expenses||[]).length} expense records`);
+    } catch { showToast('Could not read file — make sure it is a valid JSON export', 'error'); }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+function exportExcelMonth() {
+  const wb = XLSX.utils.book_new();
+  _addMonthSheet(wb, filterYear, filterMonth);
+  XLSX.writeFile(wb, `BMS_${MONTHS_S[filterMonth]}${filterYear}.xlsx`);
+  showToast('Monthly Excel downloaded');
+}
+
+function exportExcelYear() {
+  const wb  = XLSX.utils.book_new();
+  const fys = filterMonth >= 3 ? filterYear : filterYear - 1;
+  for (let m = 0; m < 12; m++) {
+    const mi = (3 + m) % 12;
+    const yr = m < 9 ? fys : fys + 1;
+    _addMonthSheet(wb, yr, mi);
+  }
+  _addConsolidated(wb, fys);
+  XLSX.writeFile(wb, `BMS_FY${fys}_${fys+1}.xlsx`);
+  showToast('Full year Excel downloaded');
+}
+
+function _addMonthSheet(wb, year, month) {
+  const mInc = income.filter(i   => { const d=new Date(i.date); return d.getMonth()===month && d.getFullYear()===year; });
+  const mExp = expenses.filter(e => { const d=new Date(e.date); return d.getMonth()===month && d.getFullYear()===year; });
+  const rows = [];
+  rows.push([`Brightmind Solutions Limited — ${MONTHS_FULL[month]} ${year}`, '', '', '', '', '']);
+  rows.push(['']);
+  rows.push(['INCOME RECORDS', '', '', '', '', '']);
+  rows.push(['Date', 'Student', 'Amount (£)', 'Payment Method', 'Payment Timing', 'Notes']);
+  mInc.forEach(i => rows.push([i.date, i.student, +parseFloat(i.amount).toFixed(2), i.paymentMethod, TIMING_MAP[i.paymentTiming]||i.paymentTiming, i.notes||'']));
+  rows.push(['', 'TOTAL INCOME', +sum(mInc).toFixed(2), '', '', '']);
+  rows.push(['']);
+  rows.push(['EXPENSE RECORDS', '', '', '', '', '']);
+  rows.push(['Date', 'Description', 'Amount (£)', 'Payment Method', 'Category', 'Notes']);
+  mExp.forEach(e => rows.push([e.date, e.description, +parseFloat(e.amount).toFixed(2), e.paymentMethod, e.category, e.notes||'']));
+  rows.push(['', 'TOTAL EXPENSES', +sum(mExp).toFixed(2), '', '', '']);
+  rows.push(['']);
+  rows.push(['', 'NET PROFIT', +(sum(mInc)-sum(mExp)).toFixed(2), '', '', '']);
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+  ws['!cols'] = [{wch:12},{wch:28},{wch:13},{wch:16},{wch:22},{wch:30}];
+  XLSX.utils.book_append_sheet(wb, ws, `${MONTHS_S[month]}${String(year).slice(2)}`);
+}
+
+function _addConsolidated(wb, fys) {
+  const rows = [];
+  rows.push([`Brightmind Solutions Limited — Financial Year ${fys}/${fys+1}`, '', '', '', '']);
+  rows.push(['HMRC Self Assessment — Schedule of Income and Expenditure', '', '', '', '']);
+  rows.push(['']);
+  rows.push(['Month', 'Income (£)', 'Expenses (£)', 'Net Profit (£)', 'Running Total (£)']);
+  let run = 0;
+  for (let m = 0; m < 12; m++) {
+    const mi = (3+m)%12, yr = m<9?fys:fys+1;
+    const mInc = income.filter(i   => { const d=new Date(i.date); return d.getMonth()===mi && d.getFullYear()===yr; });
+    const mExp = expenses.filter(e => { const d=new Date(e.date); return d.getMonth()===mi && d.getFullYear()===yr; });
+    const inc=sum(mInc), exp=sum(mExp), net=inc-exp; run+=net;
+    rows.push([`${MONTHS_FULL[mi]} ${yr}`, +inc.toFixed(2), +exp.toFixed(2), +net.toFixed(2), +run.toFixed(2)]);
+  }
+  const fyInc = income.filter(i   => { const d=new Date(i.date); const fy=d.getMonth()>=3?d.getFullYear():d.getFullYear()-1; return fy===fys; });
+  const fyExp = expenses.filter(e => { const d=new Date(e.date); const fy=d.getMonth()>=3?d.getFullYear():d.getFullYear()-1; return fy===fys; });
+  const ti=sum(fyInc), te=sum(fyExp);
+  rows.push(['ANNUAL TOTAL', +ti.toFixed(2), +te.toFixed(2), +(ti-te).toFixed(2), '']);
+  rows.push(['']);
+  rows.push(['HMRC SA103 REFERENCE', '', '', '', '']);
+  rows.push(['Tax Year', `6 Apr ${fys} to 5 Apr ${fys+1}`, '', '', '']);
+  rows.push(['Business Description', 'Private Tuition / Education Services', '', '', '']);
+  rows.push(['Box 15 — Total Turnover', +ti.toFixed(2), '', '', '']);
+  rows.push(['Box 17 — Allowable Expenses', +te.toFixed(2), '', '', '']);
+  rows.push(['Box 28 — Net Profit', +(ti-te).toFixed(2), '', '', '']);
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+  ws['!cols'] = [{wch:30},{wch:16},{wch:18},{wch:16},{wch:18}];
+  XLSX.utils.book_append_sheet(wb, ws, 'FY Summary');
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER — NAV + TOPBAR
+// ═══════════════════════════════════════════════════════
+function renderNav() {
+  document.getElementById('nav').innerHTML = NAV.map(n =>
+    `<button class="nav-item ${tab===n.id?'active':''}" onclick="setTab('${n.id}')">
+       <span class="nav-icon">${n.icon}</span>${n.label}
+     </button>`
+  ).join('');
+}
+
+function setTab(t) { tab = t; render(); }
+
+function renderTopbar() {
+  document.getElementById('page-title').textContent = NAV.find(n=>n.id===tab)?.label || '';
+  const showNav = ['dashboard','income','expenses'].includes(tab);
+  document.getElementById('month-nav').style.display = showNav ? 'flex' : 'none';
+  document.getElementById('month-label').textContent = `${MONTHS_FULL[filterMonth]} ${filterYear}`;
+  let btns = '';
+  if (tab === 'dashboard') btns = `
+    <button class="btn btn-green btn-sm" onclick="openIncomeModal()">+ Income</button>
+    <button class="btn btn-red   btn-sm" onclick="openExpenseModal()">+ Expense</button>`;
+  else if (tab === 'income')
+    btns = `<button class="btn btn-green" onclick="openIncomeModal()">+ Add Income</button>`;
+  else if (tab === 'expenses')
+    btns = `<button class="btn btn-red" onclick="openExpenseModal()">+ Add Expense</button>`;
+  document.getElementById('topbar-right').innerHTML = btns;
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER — DASHBOARD
+// ═══════════════════════════════════════════════════════
+function renderDashboard() {
+  const mInc = monthItems(income);
+  const mExp = monthItems(expenses);
+  const ti = sum(mInc), te = sum(mExp), net = ti - te;
+  const deferred = income.filter(i => i.paymentTiming === 'deferred').reduce((s,i)=>s+parseFloat(i.amount||0),0);
+
+  // 6-month chart data
+  const chart = [];
+  for (let i = 5; i >= 0; i--) {
+    let m = filterMonth - i, y = filterYear;
+    if (m < 0) { m += 12; y--; }
+    chart.push({
+      label: MONTHS_S[m],
+      inc:   sum(income.filter(x   => { const d=new Date(x.date); return d.getMonth()===m && d.getFullYear()===y; })),
+      exp:   sum(expenses.filter(x => { const d=new Date(x.date); return d.getMonth()===m && d.getFullYear()===y; }))
+    });
+  }
+  const maxV = Math.max(...chart.map(d => Math.max(d.inc, d.exp)), 1);
+
+  const recent = [...income.map(i=>({...i,_t:'income'})), ...expenses.map(e=>({...e,_t:'expense'}))]
+    .sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0, 8);
+
+  return `
+  <div class="cards">
+    <div class="card">
+      <div class="card-label">Income — ${MONTHS_S[filterMonth]}</div>
+      <div class="card-value green">${gbp(ti)}</div>
+      <div class="card-sub">${mInc.length} payment${mInc.length!==1?'s':''}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Expenses — ${MONTHS_S[filterMonth]}</div>
+      <div class="card-value red">${gbp(te)}</div>
+      <div class="card-sub">${mExp.length} transaction${mExp.length!==1?'s':''}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Net Profit — ${MONTHS_S[filterMonth]}</div>
+      <div class="card-value ${net>=0?'green':'red'}">${net<0?'−':''}${gbp(Math.abs(net))}</div>
+      <div class="card-sub">${net>=0?'Profit':'Loss'} this month</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Outstanding (Deferred)</div>
+      <div class="card-value amber">${gbp(deferred)}</div>
+      <div class="card-sub">Unpaid all-time</div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-header">
+      <span class="chart-title">6-Month Overview</span>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#10B981"></div>Income</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#EF4444"></div>Expenses</div>
+      </div>
+    </div>
+    <div class="bar-chart">
+      ${chart.map(d => `
+        <div class="bar-group">
+          <div class="bar-group-bars">
+            <div class="bar" style="background:#10B981;height:${Math.round((d.inc/maxV)*120)}px" title="Income: ${gbp(d.inc)}"></div>
+            <div class="bar" style="background:#EF4444;height:${Math.round((d.exp/maxV)*120)}px" title="Expenses: ${gbp(d.exp)}"></div>
+          </div>
+          <div class="bar-label">${d.label}</div>
+        </div>`).join('')}
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-title">Recent Transactions</span>
+  </div>
+  <div class="table-wrap">
+    ${recent.length === 0 ? `
+      <div class="empty-state">
+        <p>No transactions yet. Add your first income or expense to get started.</p>
+        <button class="btn btn-green btn-sm" onclick="openIncomeModal()">+ Add Income</button>
+        &nbsp;
+        <button class="btn btn-red btn-sm" onclick="openExpenseModal()">+ Add Expense</button>
+      </div>` : `
+    <table>
+      <thead><tr>
+        <th>Date</th><th>Description</th><th>Type</th><th>Method</th>
+        <th style="text-align:right">Amount</th>
+      </tr></thead>
+      <tbody>
+      ${recent.map(t => `<tr>
+        <td>${fmtDate(t.date)}</td>
+        <td style="font-weight:500">${esc(t._t==='income' ? t.student : t.description)}</td>
+        <td>${t._t==='income'
+          ? '<span class="badge badge-green">Income</span>'
+          : '<span class="badge badge-red">Expense</span>'}</td>
+        <td>${t._t==='income'
+          ? (t.paymentMethod==='cash' ? '<span class="badge badge-amber">Cash</span>' : '<span class="badge badge-blue">Bank</span>')
+          : (t.paymentMethod==='cash' ? '<span class="badge badge-amber">Cash</span>' : '<span class="badge badge-gray">Card</span>')}</td>
+        <td style="text-align:right;font-weight:700" class="${t._t==='income'?'green':'red'}">
+          ${t._t==='income'?'+':'−'}${gbp(t.amount)}
+        </td>
+      </tr>`).join('')}
+      </tbody>
+    </table>`}
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER — INCOME
+// ═══════════════════════════════════════════════════════
+function renderIncome() {
+  const items = monthItems(income).sort((a,b) => new Date(b.date) - new Date(a.date));
+  const ti = sum(items);
+  return `
+  <div class="section-header" style="margin-bottom:14px">
+    <span style="font-size:13px;color:var(--text2)">
+      <b>${items.length}</b> record${items.length!==1?'s':''} in ${MONTHS_FULL[filterMonth]}
+      &nbsp;·&nbsp; Total: <b class="green">${gbp(ti)}</b>
+    </span>
+  </div>
+  <div class="table-wrap">
+    ${items.length === 0 ? `
+      <div class="empty-state">
+        <p>No income recorded for ${MONTHS_FULL[filterMonth]} ${filterYear}.</p>
+        <button class="btn btn-green" onclick="openIncomeModal()">+ Add Income</button>
+      </div>` : `
+    <table>
+      <thead><tr>
+        <th>Date</th><th>Student</th><th>Timing</th><th>Method</th>
+        <th style="text-align:right">Amount</th><th>Notes</th><th style="width:80px"></th>
+      </tr></thead>
+      <tbody>
+      ${items.map(i => {
+        const encoded = encodeURIComponent(JSON.stringify(i));
+        return `<tr>
+          <td>${fmtDate(i.date)}</td>
+          <td style="font-weight:600">${esc(i.student)}</td>
+          <td>${({advance:'<span class="badge badge-blue">Advance</span>',end_of_lesson:'<span class="badge badge-green">End of Lesson</span>',deferred:'<span class="badge badge-red">Deferred</span>'})[i.paymentTiming]||i.paymentTiming}</td>
+          <td>${i.paymentMethod==='cash'?'<span class="badge badge-amber">Cash</span>':'<span class="badge badge-blue">Bank</span>'}</td>
+          <td style="text-align:right;font-weight:700" class="green">+${gbp(i.amount)}</td>
+          <td style="color:var(--text3);font-size:12px">${esc(i.notes||'')}</td>
+          <td>
+            <button class="btn btn-outline btn-sm" onclick="openIncomeModal('${encoded}')">Edit</button>
+            <button class="btn btn-outline btn-sm" style="color:var(--red);margin-left:4px" onclick="deleteIncome('${i.id}')">✕</button>
+          </td>
+        </tr>`;
+      }).join('')}
+      <tr class="total-row">
+        <td colspan="4" style="text-align:right">Total Income</td>
+        <td style="text-align:right" class="green">${gbp(ti)}</td>
+        <td colspan="2"></td>
+      </tr>
+      </tbody>
+    </table>`}
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER — EXPENSES
+// ═══════════════════════════════════════════════════════
+function renderExpenses() {
+  const items = monthItems(expenses).sort((a,b) => new Date(b.date) - new Date(a.date));
+  const te = sum(items);
+  return `
+  <div class="section-header" style="margin-bottom:14px">
+    <span style="font-size:13px;color:var(--text2)">
+      <b>${items.length}</b> record${items.length!==1?'s':''} in ${MONTHS_FULL[filterMonth]}
+      &nbsp;·&nbsp; Total: <b class="red">${gbp(te)}</b>
+    </span>
+  </div>
+  <div class="table-wrap">
+    ${items.length === 0 ? `
+      <div class="empty-state">
+        <p>No expenses recorded for ${MONTHS_FULL[filterMonth]} ${filterYear}.</p>
+        <button class="btn btn-red" onclick="openExpenseModal()">+ Add Expense</button>
+      </div>` : `
+    <table>
+      <thead><tr>
+        <th>Date</th><th>Description</th><th>Category</th><th>Method</th>
+        <th style="text-align:right">Amount</th><th>Notes</th><th style="width:80px"></th>
+      </tr></thead>
+      <tbody>
+      ${items.map(e => {
+        const encoded = encodeURIComponent(JSON.stringify(e));
+        return `<tr>
+          <td>${fmtDate(e.date)}</td>
+          <td style="font-weight:600">${esc(e.description)}</td>
+          <td><span class="badge badge-gray">${esc(e.category)}</span></td>
+          <td>${e.paymentMethod==='cash'?'<span class="badge badge-amber">Cash</span>':'<span class="badge badge-gray">Card</span>'}</td>
+          <td style="text-align:right;font-weight:700" class="red">−${gbp(e.amount)}</td>
+          <td style="color:var(--text3);font-size:12px">${esc(e.notes||'')}</td>
+          <td>
+            <button class="btn btn-outline btn-sm" onclick="openExpenseModal('${encoded}')">Edit</button>
+            <button class="btn btn-outline btn-sm" style="color:var(--red);margin-left:4px" onclick="deleteExpense('${e.id}')">✕</button>
+          </td>
+        </tr>`;
+      }).join('')}
+      <tr class="total-row">
+        <td colspan="4" style="text-align:right">Total Expenses</td>
+        <td style="text-align:right" class="red">${gbp(te)}</td>
+        <td colspan="2"></td>
+      </tr>
+      </tbody>
+    </table>`}
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER — REPORTS
+// ═══════════════════════════════════════════════════════
+function renderReports() {
+  const fys = filterMonth >= 3 ? filterYear : filterYear - 1;
+  const fyInc = income.filter(i   => { const d=new Date(i.date); const fy=d.getMonth()>=3?d.getFullYear():d.getFullYear()-1; return fy===fys; });
+  const fyExp = expenses.filter(e => { const d=new Date(e.date); const fy=d.getMonth()>=3?d.getFullYear():d.getFullYear()-1; return fy===fys; });
+  const ti = sum(fyInc), te = sum(fyExp);
+
+  let run = 0;
+  const rows = [];
+  for (let m = 0; m < 12; m++) {
+    const mi = (3+m)%12, yr = m<9 ? fys : fys+1;
+    const mInc = income.filter(i   => { const d=new Date(i.date); return d.getMonth()===mi && d.getFullYear()===yr; });
+    const mExp = expenses.filter(e => { const d=new Date(e.date); return d.getMonth()===mi && d.getFullYear()===yr; });
+    const inc=sum(mInc), exp=sum(mExp), net=inc-exp; run+=net;
+    rows.push({label:`${MONTHS_FULL[mi]} ${yr}`, inc, exp, net, run, cnt: mInc.length+mExp.length});
+  }
+
+  return `
+  <div class="two-col">
+    <div class="card">
+      <div class="card-label">FY ${fys}/${fys+1} Total Income</div>
+      <div class="card-value green">${gbp(ti)}</div>
+      <div class="card-sub">${fyInc.length} payments</div>
+    </div>
+    <div class="card">
+      <div class="card-label">FY ${fys}/${fys+1} Total Expenses</div>
+      <div class="card-value red">${gbp(te)}</div>
+      <div class="card-sub">${fyExp.length} transactions</div>
+    </div>
+  </div>
+
+  <div class="section-header" style="margin-bottom:10px">
+    <span class="section-title">Monthly Breakdown — FY ${fys}/${fys+1}</span>
+  </div>
+  <div class="table-wrap" style="margin-bottom:20px">
+    <table>
+      <thead><tr>
+        <th>Month</th>
+        <th style="text-align:right">Income</th>
+        <th style="text-align:right">Expenses</th>
+        <th style="text-align:right">Net Profit</th>
+        <th style="text-align:right">Running Total</th>
+      </tr></thead>
+      <tbody>
+      ${rows.map(r => `<tr>
+        <td>${r.label}</td>
+        <td style="text-align:right" class="${r.inc>0?'green':''}">${r.inc>0?gbp(r.inc):'—'}</td>
+        <td style="text-align:right" class="${r.exp>0?'red':''}">${r.exp>0?gbp(r.exp):'—'}</td>
+        <td style="text-align:right;font-weight:700" class="${r.cnt>0?(r.net>=0?'green':'red'):''}">
+          ${r.cnt>0 ? ((r.net>=0?'+':'')+gbp(r.net)) : '—'}
+        </td>
+        <td style="text-align:right;color:var(--text2)">${r.run!==0?gbp(r.run):'—'}</td>
+      </tr>`).join('')}
+      <tr class="total-row">
+        <td><b>Annual Total</b></td>
+        <td style="text-align:right" class="green"><b>${gbp(ti)}</b></td>
+        <td style="text-align:right" class="red"><b>${gbp(te)}</b></td>
+        <td style="text-align:right;font-weight:700" class="${(ti-te)>=0?'green':'red'}"><b>${gbp(ti-te)}</b></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-header" style="margin-bottom:10px">
+    <span class="section-title">HMRC Self Assessment — SA103</span>
+  </div>
+  <div class="hmrc-card" style="margin-bottom:20px">
+    <div style="font-size:12px;color:var(--text2);margin-bottom:14px">
+      Tax Year: <b>6 April ${fys} to 5 April ${fys+1}</b> &nbsp;·&nbsp; Business: <b>Brightmind Solutions Limited</b> &nbsp;·&nbsp; Type: Private Tuition
+    </div>
+    <div class="hmrc-row">
+      <span style="font-size:13px;color:var(--text2)">Box 15 — Total Turnover</span>
+      <span style="font-size:15px;font-weight:700;color:var(--green-dark)">${gbp(ti)}</span>
+    </div>
+    <div class="hmrc-row">
+      <span style="font-size:13px;color:var(--text2)">Box 17 — Total Allowable Expenses</span>
+      <span style="font-size:15px;font-weight:700;color:var(--red-dark)">${gbp(te)}</span>
+    </div>
+    <div class="hmrc-row">
+      <span style="font-size:14px;font-weight:700">Box 28 — Net Profit for HMRC</span>
+      <span style="font-size:20px;font-weight:800" class="${(ti-te)>=0?'green':'red'}">${gbp(ti-te)}</span>
+    </div>
+  </div>
+
+  <div class="section-header" style="margin-bottom:10px">
+    <span class="section-title">Export Reports</span>
+  </div>
+  <div class="export-card">
+    <div style="font-size:13px;color:var(--text2);margin-bottom:4px">
+      Download your data as Excel or JSON. For a fully colour-coded Excel with charts, export JSON and run the Python script.
+    </div>
+    <div class="export-btns">
+      <button class="btn btn-outline" onclick="exportExcelMonth()">📥 Excel — ${MONTHS_S[filterMonth]} ${filterYear}</button>
+      <button class="btn btn-outline" onclick="exportExcelYear()">📊 Excel — FY ${fys}/${fys+1}</button>
+      <button class="btn btn-green"   onclick="exportJSON()">⬇ Export JSON</button>
+      <label  class="btn btn-outline" style="cursor:pointer">
+        ⬆ Import JSON
+        <input type="file" accept=".json" class="hidden-file" onchange="importJSON(event)">
+      </label>
+    </div>
+    <div class="code-block">
+      <b>For colour-coded Excel with charts (requires Python):</b><br>
+      1. Click <b>Export JSON</b> above to download your data<br>
+      2. Install: <code>pip install openpyxl</code><br>
+      3. Run: <code>python generate_excel_report.py BMS_finance_data.json</code>
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+//  MAIN RENDER
+// ═══════════════════════════════════════════════════════
+function render() {
+  renderNav();
+  renderTopbar();
+  const el = document.getElementById('content');
+  if      (tab === 'dashboard') el.innerHTML = renderDashboard();
+  else if (tab === 'income')    el.innerHTML = renderIncome();
+  else if (tab === 'expenses')  el.innerHTML = renderExpenses();
+  else if (tab === 'reports')   el.innerHTML = renderReports();
+}
+
+// ─── Start ────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
