@@ -5,7 +5,7 @@ Hosted on **GitHub Pages** — no server, no database, no subscription needed.
 
 ## 🌐 Live App
 
-👉 **https://YOUR-USERNAME.github.io/brightmind-finance/**
+👉 **https://BMSCoventry.github.io/brightmind-finance/**
 
 ---
 
