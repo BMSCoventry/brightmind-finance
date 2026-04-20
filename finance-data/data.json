@@ -35,6 +35,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "2 Classes"
+    },
+    {
+      "id": "mo6pxdhcvlmhlt",
+      "date": "2026-04-18",
+      "amount": 56,
+      "student": "Hari and Jayden",
+      "paymentMethod": "bank",
+      "paymentTiming": "deferred",
+      "notes": "Hari 2 classes\nJayden 3 Classes"
     }
   ],
   "expenses": [
@@ -57,5 +66,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:51:32.234Z"
+  "lastUpdated": "2026-04-20T04:52:12.765Z"
 }
