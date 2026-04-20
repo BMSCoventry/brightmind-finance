@@ -1,0 +1,15 @@
+{
+  "income": [],
+  "expenses": [
+    {
+      "id": "mo6prpa2chpcky",
+      "date": "2026-04-07",
+      "amount": 20.28,
+      "description": "Ms office License",
+      "category": "Software/Subscriptions",
+      "paymentMethod": "card",
+      "notes": ""
+    }
+  ],
+  "lastUpdated": "2026-04-20T04:47:48.109Z"
+}
