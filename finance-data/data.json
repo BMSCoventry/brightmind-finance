@@ -62,6 +62,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo6q47r9xdz0hg",
+      "date": "2026-04-03",
+      "amount": 36,
+      "student": "Nilash",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "3 Sessions"
     }
   ],
   "expenses": [
@@ -84,5 +93,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:56:53.278Z"
+  "lastUpdated": "2026-04-20T04:57:31.941Z"
 }
