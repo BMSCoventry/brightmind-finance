@@ -53,6 +53,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "1 Class"
+    },
+    {
+      "id": "mo6q3dxka8663p",
+      "date": "2026-04-03",
+      "amount": 48,
+      "student": "Tamilini",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -75,5 +84,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:52:43.271Z"
+  "lastUpdated": "2026-04-20T04:56:53.278Z"
 }
