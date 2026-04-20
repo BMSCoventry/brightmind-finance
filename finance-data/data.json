@@ -89,6 +89,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Sessions"
+    },
+    {
+      "id": "mo6q61mrelf7x7",
+      "date": "2026-04-04",
+      "amount": 48,
+      "student": "Krithick",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -111,5 +120,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:58:23.606Z"
+  "lastUpdated": "2026-04-20T04:58:57.325Z"
 }
