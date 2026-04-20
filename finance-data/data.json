@@ -8,6 +8,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "2 classes"
+    },
+    {
+      "id": "mo6pv3irv4quts",
+      "date": "2026-04-11",
+      "amount": 36,
+      "student": "Sakana",
+      "paymentMethod": "bank",
+      "paymentTiming": "deferred",
+      "notes": "3 classes"
     }
   ],
   "expenses": [
@@ -30,5 +39,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:49:49.250Z"
+  "lastUpdated": "2026-04-20T04:50:26.531Z"
 }
