@@ -80,6 +80,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo6q5bmr3rye49",
+      "date": "2026-04-04",
+      "amount": 40,
+      "student": "Sahana",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Sessions"
     }
   ],
   "expenses": [
@@ -102,5 +111,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:58:03.974Z"
+  "lastUpdated": "2026-04-20T04:58:23.606Z"
 }
