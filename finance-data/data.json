@@ -26,6 +26,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 Class"
+    },
+    {
+      "id": "mo6pwi7s84lemy",
+      "date": "2026-04-15",
+      "amount": 24,
+      "student": "Arsshavin",
+      "paymentMethod": "bank",
+      "paymentTiming": "deferred",
+      "notes": "2 Classes"
     }
   ],
   "expenses": [
@@ -48,5 +57,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:51:01.171Z"
+  "lastUpdated": "2026-04-20T04:51:32.234Z"
 }
