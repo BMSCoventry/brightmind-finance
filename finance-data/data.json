@@ -9,7 +9,16 @@
       "category": "Software/Subscriptions",
       "paymentMethod": "card",
       "notes": ""
+    },
+    {
+      "id": "mo6pt958wliwru",
+      "date": "2026-04-10",
+      "amount": 322.56,
+      "description": "MS office yearly License",
+      "category": "Software/Subscriptions",
+      "paymentMethod": "card",
+      "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:47:48.109Z"
+  "lastUpdated": "2026-04-20T04:49:00.516Z"
 }
