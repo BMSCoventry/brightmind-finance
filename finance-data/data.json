@@ -17,6 +17,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "3 classes"
+    },
+    {
+      "id": "mo6pvu8obqkjtp",
+      "date": "2026-04-12",
+      "amount": 12,
+      "student": "Kirishika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "1 Class"
     }
   ],
   "expenses": [
@@ -39,5 +48,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:50:26.531Z"
+  "lastUpdated": "2026-04-20T04:51:01.171Z"
 }
