@@ -44,6 +44,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "Hari 2 classes\nJayden 3 Classes"
+    },
+    {
+      "id": "mo6py1120xdar2",
+      "date": "2026-04-19",
+      "amount": 12,
+      "student": "Arnish",
+      "paymentMethod": "bank",
+      "paymentTiming": "deferred",
+      "notes": "1 Class"
     }
   ],
   "expenses": [
@@ -66,5 +75,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:52:12.765Z"
+  "lastUpdated": "2026-04-20T04:52:43.271Z"
 }
