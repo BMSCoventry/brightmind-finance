@@ -98,6 +98,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo6u0mdzzh0pv0",
+      "date": "2026-04-20",
+      "amount": 12,
+      "student": "Kirishika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "1 class"
     }
   ],
   "expenses": [
@@ -120,5 +129,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T04:58:57.325Z"
+  "lastUpdated": "2026-04-20T06:46:42.732Z"
 }
