@@ -161,6 +161,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 classes"
+    },
+    {
+      "id": "mo86k19ifcoaji",
+      "date": "2026-04-11",
+      "amount": 40,
+      "student": "Neriyal",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 classes"
     }
   ],
   "expenses": [
@@ -183,5 +192,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:24:29.884Z"
+  "lastUpdated": "2026-04-21T05:25:30.053Z"
 }
