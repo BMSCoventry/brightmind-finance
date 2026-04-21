@@ -314,6 +314,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86x2wrzqvrsh",
+      "date": "2026-04-05",
+      "amount": 60,
+      "student": "Ashwin",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -336,5 +345,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:35:20.008Z"
+  "lastUpdated": "2026-04-21T05:35:38.708Z"
 }
