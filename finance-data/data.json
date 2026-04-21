@@ -242,6 +242,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86q4r6tasykk",
+      "date": "2026-04-05",
+      "amount": 48,
+      "student": "Maani",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -264,5 +273,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:29:48.990Z"
+  "lastUpdated": "2026-04-21T05:30:14.503Z"
 }
