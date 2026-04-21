@@ -188,6 +188,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86mmhdqfx3ep",
+      "date": "2026-04-12",
+      "amount": 40,
+      "student": "Jebison",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -210,5 +219,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:27:12.884Z"
+  "lastUpdated": "2026-04-21T05:27:30.850Z"
 }
