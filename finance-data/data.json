@@ -332,6 +332,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86ygyittcvsv",
+      "date": "2026-04-11",
+      "amount": 48,
+      "student": "Shabharish",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 classes"
     }
   ],
   "expenses": [
@@ -354,5 +363,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:35:57.525Z"
+  "lastUpdated": "2026-04-21T05:36:43.571Z"
 }
