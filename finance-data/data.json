@@ -179,6 +179,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86m8m5gmjwqs",
+      "date": "2026-04-12",
+      "amount": 48,
+      "student": "Jerisha",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -201,5 +210,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:26:29.449Z"
+  "lastUpdated": "2026-04-21T05:27:12.884Z"
 }
