@@ -134,6 +134,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 classes"
+    },
+    {
+      "id": "mo86g4iebokk7a",
+      "date": "2026-04-05",
+      "amount": 40,
+      "student": "Aksha",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 classes"
     }
   ],
   "expenses": [
@@ -156,5 +165,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:21:54.035Z"
+  "lastUpdated": "2026-04-21T05:22:27.630Z"
 }
