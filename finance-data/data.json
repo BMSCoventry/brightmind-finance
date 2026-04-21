@@ -197,6 +197,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86nbi6iyso4f",
+      "date": "2026-04-09",
+      "amount": 60,
+      "student": "Agalijah",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -219,5 +228,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:27:30.850Z"
+  "lastUpdated": "2026-04-21T05:28:03.281Z"
 }
