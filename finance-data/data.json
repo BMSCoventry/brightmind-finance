@@ -251,6 +251,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86s23s19rjsx",
+      "date": "2026-04-07",
+      "amount": 40,
+      "student": "Kireshan",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -273,5 +282,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:30:14.503Z"
+  "lastUpdated": "2026-04-21T05:31:44.387Z"
 }
