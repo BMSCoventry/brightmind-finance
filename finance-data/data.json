@@ -156,8 +156,8 @@
     {
       "id": "mo86iqu64h6ozn",
       "date": "2026-04-11",
-      "amount": 48,
-      "student": "Kritick",
+      "amount": 40,
+      "student": "Kiruthiksh",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 classes"
@@ -408,5 +408,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:39:56.477Z"
+  "lastUpdated": "2026-04-21T05:44:51.268Z"
 }
