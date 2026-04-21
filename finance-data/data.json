@@ -368,6 +368,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo871prux7td9i",
+      "date": "2026-04-20",
+      "amount": 48,
+      "student": "Akshayan",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -390,5 +399,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:38:30.574Z"
+  "lastUpdated": "2026-04-21T05:39:14.965Z"
 }
