@@ -165,7 +165,7 @@
     {
       "id": "mo86k19ifcoaji",
       "date": "2026-04-11",
-      "amount": 40,
+      "amount": 30,
       "student": "Neriyal",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
@@ -408,5 +408,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:44:51.268Z"
+  "lastUpdated": "2026-04-21T17:45:38.337Z"
 }
