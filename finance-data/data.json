@@ -215,6 +215,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86ockb6asy5u",
+      "date": "2026-04-09",
+      "amount": 60,
+      "student": "Abshara",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -237,5 +246,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:28:27.457Z"
+  "lastUpdated": "2026-04-21T05:28:51.311Z"
 }
