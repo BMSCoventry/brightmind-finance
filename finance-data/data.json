@@ -233,6 +233,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86pl2bbgyewa",
+      "date": "2026-04-13",
+      "amount": 48,
+      "student": "Jeyani",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -255,5 +264,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:29:29.127Z"
+  "lastUpdated": "2026-04-21T05:29:48.990Z"
 }
