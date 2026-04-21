@@ -305,6 +305,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "3 Classes"
+    },
+    {
+      "id": "mo86woh4ki4dna",
+      "date": "2026-04-12",
+      "amount": 60,
+      "student": "Shanuja",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -327,5 +336,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:34:59.941Z"
+  "lastUpdated": "2026-04-21T05:35:20.008Z"
 }
