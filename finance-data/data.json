@@ -210,11 +210,11 @@
     {
       "id": "mo86nu5dimwkfg",
       "date": "2026-04-09",
-      "amount": 60,
+      "amount": 45,
       "student": "Sherone",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
-      "notes": "4 Classes"
+      "notes": "3 Classes"
     },
     {
       "id": "mo86ockb6asy5u",
@@ -408,5 +408,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T17:45:38.337Z"
+  "lastUpdated": "2026-04-21T17:45:49.642Z"
 }
