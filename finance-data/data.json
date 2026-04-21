@@ -143,6 +143,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 classes"
+    },
+    {
+      "id": "mo86gkzqx88p39",
+      "date": "2026-04-05",
+      "amount": 40,
+      "student": "Bhagavi",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -165,5 +174,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:22:27.630Z"
+  "lastUpdated": "2026-04-21T05:22:48.993Z"
 }
