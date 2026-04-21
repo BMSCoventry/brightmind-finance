@@ -260,6 +260,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86simlnv4xwv",
+      "date": "2026-04-02",
+      "amount": 48,
+      "student": "Abinash",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -282,5 +291,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:31:44.387Z"
+  "lastUpdated": "2026-04-21T05:32:05.800Z"
 }
