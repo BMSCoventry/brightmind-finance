@@ -206,6 +206,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86nu5dimwkfg",
+      "date": "2026-04-09",
+      "amount": 60,
+      "student": "Sherone",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -228,5 +237,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:28:03.281Z"
+  "lastUpdated": "2026-04-21T05:28:27.457Z"
 }
