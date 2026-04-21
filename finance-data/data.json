@@ -269,6 +269,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86t3nlmcufba",
+      "date": "2026-04-09",
+      "amount": 48,
+      "student": "Shobia",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -291,5 +300,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:32:05.800Z"
+  "lastUpdated": "2026-04-21T05:32:33.042Z"
 }
