@@ -152,6 +152,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86iqu64h6ozn",
+      "date": "2026-04-11",
+      "amount": 48,
+      "student": "Kritick",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 classes"
     }
   ],
   "expenses": [
@@ -174,5 +183,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:23:34.287Z"
+  "lastUpdated": "2026-04-21T05:24:29.884Z"
 }
