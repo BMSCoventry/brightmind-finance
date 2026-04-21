@@ -224,6 +224,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86p5qm62pnsu",
+      "date": "2026-04-18",
+      "amount": 48,
+      "student": "Tharushan",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -246,5 +255,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:28:51.311Z"
+  "lastUpdated": "2026-04-21T05:29:29.127Z"
 }
