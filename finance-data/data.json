@@ -350,6 +350,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo870copeev1eh",
+      "date": "2026-04-19",
+      "amount": 48,
+      "student": "Kabil",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -372,5 +381,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:37:08.756Z"
+  "lastUpdated": "2026-04-21T05:38:11.339Z"
 }
