@@ -296,6 +296,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "3 Classes"
+    },
+    {
+      "id": "mo86w8zxyvropx",
+      "date": "2026-04-13",
+      "amount": 45,
+      "student": "Shanuka",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "3 Classes"
     }
   ],
   "expenses": [
@@ -318,5 +327,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:33:54.161Z"
+  "lastUpdated": "2026-04-21T05:34:59.941Z"
 }
