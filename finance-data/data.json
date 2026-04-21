@@ -359,6 +359,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo870riq0bn0td",
+      "date": "2026-04-05",
+      "amount": 48,
+      "student": "Kidujan",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -381,5 +390,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:38:11.339Z"
+  "lastUpdated": "2026-04-21T05:38:30.574Z"
 }
