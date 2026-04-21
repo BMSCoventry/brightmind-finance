@@ -377,6 +377,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo872lt0zixx2w",
+      "date": "2026-04-06",
+      "amount": 48,
+      "student": "Johinath",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -399,5 +408,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:39:14.965Z"
+  "lastUpdated": "2026-04-21T05:39:56.477Z"
 }
