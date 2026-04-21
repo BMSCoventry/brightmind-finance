@@ -125,6 +125,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mo86felb75fd0a",
+      "date": "2026-04-05",
+      "amount": 48,
+      "student": "Aarushon",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 classes"
     }
   ],
   "expenses": [
@@ -147,5 +156,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-21T05:20:58.853Z"
+  "lastUpdated": "2026-04-21T05:21:54.035Z"
 }
