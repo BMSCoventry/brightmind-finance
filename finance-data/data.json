@@ -107,6 +107,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 class"
+    },
+    {
+      "id": "mo86dbkvzv0xs4",
+      "date": "2026-04-11",
+      "amount": 48,
+      "student": "Lithusha",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": "4 Classes"
     }
   ],
   "expenses": [
@@ -129,5 +138,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-20T06:46:42.732Z"
+  "lastUpdated": "2026-04-21T05:20:16.819Z"
 }
