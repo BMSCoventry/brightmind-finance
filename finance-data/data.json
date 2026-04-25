@@ -15,7 +15,7 @@
       "amount": 36,
       "student": "Sakana",
       "paymentMethod": "bank",
-      "paymentTiming": "deferred",
+      "paymentTiming": "end_of_lesson",
       "notes": "3 classes"
     },
     {
@@ -417,5 +417,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T09:17:20.005Z"
+  "lastUpdated": "2026-04-25T09:17:28.722Z"
 }
