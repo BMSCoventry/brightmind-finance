@@ -51,7 +51,7 @@
       "amount": 12,
       "student": "Arnish",
       "paymentMethod": "bank",
-      "paymentTiming": "deferred",
+      "paymentTiming": "end_of_lesson",
       "notes": "1 Class"
     },
     {
@@ -417,5 +417,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T09:08:52.401Z"
+  "lastUpdated": "2026-04-25T09:17:05.613Z"
 }
