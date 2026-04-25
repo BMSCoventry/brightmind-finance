@@ -33,7 +33,7 @@
       "amount": 24,
       "student": "Arsshavin",
       "paymentMethod": "bank",
-      "paymentTiming": "deferred",
+      "paymentTiming": "advance",
       "notes": "2 Classes"
     },
     {
@@ -417,5 +417,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T09:17:13.783Z"
+  "lastUpdated": "2026-04-25T09:17:20.005Z"
 }
