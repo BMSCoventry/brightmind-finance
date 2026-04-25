@@ -6,7 +6,7 @@
       "amount": 24,
       "student": "Arsshavin",
       "paymentMethod": "bank",
-      "paymentTiming": "deferred",
+      "paymentTiming": "end_of_lesson",
       "notes": "2 classes"
     },
     {
@@ -417,5 +417,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T09:17:28.722Z"
+  "lastUpdated": "2026-04-25T09:17:34.945Z"
 }
