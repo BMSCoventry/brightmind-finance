@@ -228,11 +228,11 @@
     {
       "id": "mo86p5qm62pnsu",
       "date": "2026-04-18",
-      "amount": 48,
+      "amount": 36,
       "student": "Tharushan",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
-      "notes": "4 Classes"
+      "notes": "3 Classes"
     },
     {
       "id": "mo86pl2bbgyewa",
@@ -426,5 +426,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T14:39:07.605Z"
+  "lastUpdated": "2026-04-25T14:39:19.020Z"
 }
