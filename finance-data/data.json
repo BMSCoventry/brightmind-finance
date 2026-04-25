@@ -327,11 +327,11 @@
     {
       "id": "mo86xhfm2otd7r",
       "date": "2026-04-12",
-      "amount": 60,
+      "amount": 45,
       "student": "Sevvon",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
-      "notes": "4 Classes"
+      "notes": "3 Classes"
     },
     {
       "id": "mo86ygyittcvsv",
@@ -426,5 +426,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T14:40:03.553Z"
+  "lastUpdated": "2026-04-25T14:40:34.084Z"
 }
