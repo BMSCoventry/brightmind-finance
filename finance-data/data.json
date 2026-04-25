@@ -309,11 +309,11 @@
     {
       "id": "mo86woh4ki4dna",
       "date": "2026-04-12",
-      "amount": 60,
+      "amount": 45,
       "student": "Shanuja",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
-      "notes": "4 Classes"
+      "notes": "3 Classes"
     },
     {
       "id": "mo86x2wrzqvrsh",
@@ -426,5 +426,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T14:39:30.149Z"
+  "lastUpdated": "2026-04-25T14:39:45.236Z"
 }
