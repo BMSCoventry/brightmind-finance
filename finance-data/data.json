@@ -386,6 +386,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "4 Classes"
+    },
+    {
+      "id": "moefve5g7mh1tq",
+      "date": "2026-04-25",
+      "amount": 44,
+      "student": "Hari & Jayden",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "Hari 2 Classes , Jayden 2 Classes"
     }
   ],
   "expenses": [
@@ -417,5 +426,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T09:17:34.945Z"
+  "lastUpdated": "2026-04-25T14:32:53.561Z"
 }
