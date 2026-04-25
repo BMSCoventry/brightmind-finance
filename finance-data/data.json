@@ -42,7 +42,7 @@
       "amount": 56,
       "student": "Hari and Jayden",
       "paymentMethod": "bank",
-      "paymentTiming": "deferred",
+      "paymentTiming": "advance",
       "notes": "Hari 2 classes\nJayden 3 Classes"
     },
     {
@@ -417,5 +417,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T09:17:05.613Z"
+  "lastUpdated": "2026-04-25T09:17:13.783Z"
 }
