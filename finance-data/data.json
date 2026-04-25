@@ -345,11 +345,11 @@
     {
       "id": "mo86z0e0ei7j94",
       "date": "2026-04-18",
-      "amount": 40,
+      "amount": 30,
       "student": "Sabthami",
       "paymentMethod": "cash",
       "paymentTiming": "advance",
-      "notes": "4 Classes"
+      "notes": "3 Classes"
     },
     {
       "id": "mo870copeev1eh",
@@ -426,5 +426,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-25T14:39:19.020Z"
+  "lastUpdated": "2026-04-25T14:39:30.149Z"
 }
