@@ -406,7 +406,16 @@
       "category": "Software/Subscriptions",
       "paymentMethod": "card",
       "notes": ""
+    },
+    {
+      "id": "moe4ap945fxt2m",
+      "date": "2026-04-30",
+      "amount": 1493.5,
+      "description": "Salary- Director",
+      "category": "Other",
+      "paymentMethod": "card",
+      "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-24T10:41:43.287Z"
+  "lastUpdated": "2026-04-25T09:08:52.401Z"
 }
