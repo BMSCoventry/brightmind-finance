@@ -395,6 +395,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "Hari 2 Classes , Jayden 2 Classes"
+    },
+    {
+      "id": "mogr5dpf0xs2hb",
+      "date": "2026-04-26",
+      "amount": 27,
+      "student": "Nabika & Kirishika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "Nabika -1 Class\nKirishika - 1 Class"
     }
   ],
   "expenses": [
@@ -426,5 +435,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-26T02:55:32.121Z"
+  "lastUpdated": "2026-04-27T05:24:07.684Z"
 }
