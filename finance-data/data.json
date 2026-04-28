@@ -413,6 +413,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 class"
+    },
+    {
+      "id": "moiz95img4nmy4",
+      "date": "2026-04-28",
+      "amount": 36,
+      "student": "Shayeera",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "3 Lessons"
     }
   ],
   "expenses": [
@@ -444,5 +453,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-27T18:52:04.589Z"
+  "lastUpdated": "2026-04-28T18:46:32.964Z"
 }
