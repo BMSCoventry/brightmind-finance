@@ -451,7 +451,16 @@
       "category": "Other",
       "paymentMethod": "card",
       "notes": ""
+    },
+    {
+      "id": "mol0swe8gf6l8c",
+      "date": "2026-04-29",
+      "amount": 1,
+      "description": "Bank Charges",
+      "category": "Other",
+      "paymentMethod": "cash",
+      "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-28T18:46:32.964Z"
+  "lastUpdated": "2026-04-30T05:05:26.236Z"
 }
