@@ -431,6 +431,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 class"
+    },
+    {
+      "id": "moq2l98hdo45sh",
+      "date": "2026-05-03",
+      "amount": 12,
+      "student": "Kirishika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "1 Lesson"
     }
   ],
   "expenses": [
@@ -480,5 +489,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-03T14:57:31.995Z"
+  "lastUpdated": "2026-05-03T17:54:19.743Z"
 }
