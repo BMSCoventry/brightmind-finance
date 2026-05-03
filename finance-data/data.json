@@ -460,7 +460,16 @@
       "category": "Other",
       "paymentMethod": "cash",
       "notes": ""
+    },
+    {
+      "id": "moppehzgkxndrg",
+      "date": "2026-05-03",
+      "amount": 30.06,
+      "description": "Stationary Items",
+      "category": "Stationery",
+      "paymentMethod": "card",
+      "notes": ""
     }
   ],
-  "lastUpdated": "2026-04-30T05:05:26.236Z"
+  "lastUpdated": "2026-05-03T11:45:09.469Z"
 }
