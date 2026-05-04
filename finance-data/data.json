@@ -440,6 +440,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 Lesson"
+    },
+    {
+      "id": "mor9si8frmwx99",
+      "date": "2026-05-04",
+      "amount": 48,
+      "student": "Arsshavin",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 Lessons"
     }
   ],
   "expenses": [
@@ -489,5 +498,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-03T17:54:19.743Z"
+  "lastUpdated": "2026-05-04T14:03:41.480Z"
 }
