@@ -467,6 +467,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "Hari 1\nJayden 2"
+    },
+    {
+      "id": "mozbycrnejpv3v",
+      "date": "2026-05-07",
+      "amount": 6.54,
+      "student": "Refund",
+      "paymentMethod": "bank",
+      "paymentTiming": "deferred",
+      "notes": "Refund of MS office license"
     }
   ],
   "expenses": [
@@ -516,5 +525,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-10T05:25:09.342Z"
+  "lastUpdated": "2026-05-10T05:26:22.972Z"
 }
