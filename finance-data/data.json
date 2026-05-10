@@ -458,6 +458,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "4 Classes"
+    },
+    {
+      "id": "mozbwryine9n34",
+      "date": "2026-05-09",
+      "amount": 34,
+      "student": "Jayden and Hai",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "Hari 1\nJayden 2"
     }
   ],
   "expenses": [
@@ -507,5 +516,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-08T18:46:18.452Z"
+  "lastUpdated": "2026-05-10T05:25:09.342Z"
 }
