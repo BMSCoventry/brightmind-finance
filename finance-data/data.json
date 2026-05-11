@@ -476,6 +476,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "deferred",
       "notes": "Refund of MS office license"
+    },
+    {
+      "id": "mp0pwo7v93j4uv",
+      "date": "2026-05-10",
+      "amount": 15,
+      "student": "Nabika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "1 lesson"
     }
   ],
   "expenses": [
@@ -525,5 +534,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-10T05:26:22.972Z"
+  "lastUpdated": "2026-05-11T04:44:45.308Z"
 }
