@@ -512,6 +512,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "Nabika -1 lesson\nKirishika - 1 lesson"
+    },
+    {
+      "id": "mpr74826v1nsws",
+      "date": "2026-05-20",
+      "amount": 12,
+      "student": "Arsshavin",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "1 lesson"
     }
   ],
   "expenses": [
@@ -561,5 +570,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-29T17:27:45.949Z"
+  "lastUpdated": "2026-05-29T17:28:31.651Z"
 }
