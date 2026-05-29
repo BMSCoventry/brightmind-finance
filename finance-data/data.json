@@ -503,6 +503,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 lesson"
+    },
+    {
+      "id": "mpr738smdfgmz9",
+      "date": "2026-05-17",
+      "amount": 27,
+      "student": "Nabika Kirishika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "Nabika -1 lesson\nKirishika - 1 lesson"
     }
   ],
   "expenses": [
@@ -552,5 +561,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-29T17:27:04.771Z"
+  "lastUpdated": "2026-05-29T17:27:45.949Z"
 }
