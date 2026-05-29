@@ -530,6 +530,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": "1 lesson"
+    },
+    {
+      "id": "mpr75dzla684kk",
+      "date": "2026-05-28",
+      "amount": 24,
+      "student": "Sakana",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": "2 lessons"
     }
   ],
   "expenses": [
@@ -579,5 +588,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-29T17:28:55.298Z"
+  "lastUpdated": "2026-05-29T17:29:25.992Z"
 }
