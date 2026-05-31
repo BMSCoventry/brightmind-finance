@@ -809,6 +809,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptph5g2oxmtln",
+      "date": "2026-05-23",
+      "amount": 30,
+      "student": "Sabthami",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -858,5 +867,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:37:44.262Z"
+  "lastUpdated": "2026-05-31T11:38:00.227Z"
 }
