@@ -683,6 +683,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpb9epzmvlxy",
+      "date": "2026-05-28",
+      "amount": 45,
+      "student": "Abshara",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -732,5 +741,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:33:08.989Z"
+  "lastUpdated": "2026-05-31T11:33:25.427Z"
 }
