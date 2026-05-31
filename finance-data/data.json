@@ -728,6 +728,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpddzfyb83a3",
+      "date": "2026-05-21",
+      "amount": 36,
+      "student": "Abinash",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -777,5 +786,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:34:47.011Z"
+  "lastUpdated": "2026-05-31T11:35:04.668Z"
 }
