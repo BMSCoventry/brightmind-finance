@@ -548,6 +548,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": "3 lessons"
+    },
+    {
+      "id": "mpto3zjijp8oaa",
+      "date": "2026-05-30",
+      "amount": 36,
+      "student": "Shanjay",
+      "paymentMethod": "cash",
+      "paymentTiming": "deferred",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -597,5 +606,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T10:59:17.366Z"
+  "lastUpdated": "2026-05-31T10:59:46.431Z"
 }
