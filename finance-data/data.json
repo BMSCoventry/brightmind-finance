@@ -647,6 +647,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptoac35ke0rpl",
+      "date": "2026-05-24",
+      "amount": 36,
+      "student": "Jefrina",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -696,5 +705,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:04:27.410Z"
+  "lastUpdated": "2026-05-31T11:04:42.626Z"
 }
