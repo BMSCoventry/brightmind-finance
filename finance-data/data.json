@@ -692,6 +692,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpbsa7x1n2ml",
+      "date": "2026-05-23",
+      "amount": 36,
+      "student": "Tharushan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -741,5 +750,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:33:25.427Z"
+  "lastUpdated": "2026-05-31T11:33:49.890Z"
 }
