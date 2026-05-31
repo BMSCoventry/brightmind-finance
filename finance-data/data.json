@@ -620,6 +620,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mpto741i51uvv6",
+      "date": "2026-05-28",
+      "amount": 36,
+      "student": "Jennorshan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -669,5 +678,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:01:51.038Z"
+  "lastUpdated": "2026-05-31T11:02:12.231Z"
 }
