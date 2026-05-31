@@ -566,6 +566,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "deferred",
       "notes": ""
+    },
+    {
+      "id": "mpto4xpzkxtp0g",
+      "date": "2026-05-23",
+      "amount": 30,
+      "student": "Kritick",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -615,5 +624,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:00:06.364Z"
+  "lastUpdated": "2026-05-31T11:00:30.729Z"
 }
