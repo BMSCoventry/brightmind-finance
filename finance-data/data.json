@@ -764,6 +764,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpeq1lbtsgha",
+      "date": "2026-05-18",
+      "amount": 30,
+      "student": "Shanuka",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -813,5 +822,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:35:52.781Z"
+  "lastUpdated": "2026-05-31T11:36:06.956Z"
 }
