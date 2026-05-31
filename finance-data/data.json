@@ -791,6 +791,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "advance",
       "notes": ""
+    },
+    {
+      "id": "mptpgcoogm314v",
+      "date": "2026-05-24",
+      "amount": 30,
+      "student": "Sevvon",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -840,5 +849,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:37:08.722Z"
+  "lastUpdated": "2026-05-31T11:37:22.955Z"
 }
