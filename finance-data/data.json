@@ -701,6 +701,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpc7j0x09qix",
+      "date": "2026-05-23",
+      "amount": 24,
+      "student": "Jeyani",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -750,5 +759,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:33:49.890Z"
+  "lastUpdated": "2026-05-31T11:34:09.645Z"
 }
