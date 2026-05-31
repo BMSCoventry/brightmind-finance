@@ -737,6 +737,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpdrxdgqss5q",
+      "date": "2026-05-21",
+      "amount": 36,
+      "student": "Shobia",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -786,5 +795,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:35:04.668Z"
+  "lastUpdated": "2026-05-31T11:35:22.739Z"
 }
