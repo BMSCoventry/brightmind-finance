@@ -611,6 +611,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mpto6noui6tzn0",
+      "date": "2026-05-29",
+      "amount": 30,
+      "student": "Bhargavi",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -660,5 +669,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:01:34.946Z"
+  "lastUpdated": "2026-05-31T11:01:51.038Z"
 }
