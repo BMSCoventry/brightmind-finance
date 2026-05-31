@@ -827,6 +827,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpi759jh30zv",
+      "date": "2026-05-17",
+      "amount": 36,
+      "student": "Kidujan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -876,5 +885,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:38:30.541Z"
+  "lastUpdated": "2026-05-31T11:38:49.087Z"
 }
