@@ -773,6 +773,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpfbpxlhw5i9",
+      "date": "2026-05-24",
+      "amount": 45,
+      "student": "Shanuja",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -822,5 +831,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:36:06.956Z"
+  "lastUpdated": "2026-05-31T11:36:35.048Z"
 }
