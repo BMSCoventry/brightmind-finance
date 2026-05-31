@@ -800,6 +800,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpgt4jmw5o1m",
+      "date": "2026-05-20",
+      "amount": 36,
+      "student": "Shabharish",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -849,5 +858,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:37:22.955Z"
+  "lastUpdated": "2026-05-31T11:37:44.262Z"
 }
