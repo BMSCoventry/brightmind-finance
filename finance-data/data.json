@@ -746,6 +746,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpe3tibmgnx1",
+      "date": "2026-05-25",
+      "amount": 30,
+      "student": "Jeevan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -795,5 +804,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:35:22.739Z"
+  "lastUpdated": "2026-05-31T11:35:38.151Z"
 }
