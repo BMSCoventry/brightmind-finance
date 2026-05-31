@@ -638,6 +638,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptoa0ci3e8z5o",
+      "date": "2026-05-16",
+      "amount": 40,
+      "student": "Neriyal",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -687,5 +696,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:04:09.629Z"
+  "lastUpdated": "2026-05-31T11:04:27.410Z"
 }
