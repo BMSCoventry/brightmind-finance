@@ -557,6 +557,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "deferred",
       "notes": ""
+    },
+    {
+      "id": "mpto4ex6k5nlvl",
+      "date": "2026-05-30",
+      "amount": 30,
+      "student": "Sahana",
+      "paymentMethod": "cash",
+      "paymentTiming": "deferred",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -606,5 +615,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T10:59:46.431Z"
+  "lastUpdated": "2026-05-31T11:00:06.364Z"
 }
