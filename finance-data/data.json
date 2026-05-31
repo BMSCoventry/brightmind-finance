@@ -782,6 +782,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpg1pck0053s",
+      "date": "2026-05-09",
+      "amount": 45,
+      "student": "Ashwin",
+      "paymentMethod": "cash",
+      "paymentTiming": "advance",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -831,5 +840,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:36:35.048Z"
+  "lastUpdated": "2026-05-31T11:37:08.722Z"
 }
