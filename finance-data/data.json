@@ -561,7 +561,7 @@
     {
       "id": "mpto4ex6k5nlvl",
       "date": "2026-05-30",
-      "amount": 30,
+      "amount": 40,
       "student": "Sahana",
       "paymentMethod": "cash",
       "paymentTiming": "deferred",
@@ -903,5 +903,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:41:38.986Z"
+  "lastUpdated": "2026-05-31T11:43:21.860Z"
 }
