@@ -674,6 +674,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpawq2j9e9r6",
+      "date": "2026-05-21",
+      "amount": 30,
+      "student": "Sherone",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -723,5 +732,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:32:44.641Z"
+  "lastUpdated": "2026-05-31T11:33:08.989Z"
 }
