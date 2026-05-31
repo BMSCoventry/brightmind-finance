@@ -901,7 +901,16 @@
       "category": "Stationery",
       "paymentMethod": "card",
       "notes": ""
+    },
+    {
+      "id": "mptpqb7l5qsw4n",
+      "date": "2026-05-31",
+      "amount": 1493.5,
+      "description": "Salary - Director",
+      "category": "Other",
+      "paymentMethod": "card",
+      "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:43:58.408Z"
+  "lastUpdated": "2026-05-31T11:45:07.605Z"
 }
