@@ -710,6 +710,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpcjatnjn620",
+      "date": "2026-05-31",
+      "amount": 36,
+      "student": "Maani",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -759,5 +768,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:34:09.645Z"
+  "lastUpdated": "2026-05-31T11:34:24.905Z"
 }
