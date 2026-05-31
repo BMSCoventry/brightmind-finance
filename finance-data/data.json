@@ -755,6 +755,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpef3w5pse49",
+      "date": "2026-05-25",
+      "amount": 30,
+      "student": "Abisha",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -804,5 +813,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:35:38.151Z"
+  "lastUpdated": "2026-05-31T11:35:52.781Z"
 }
