@@ -845,6 +845,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpkghvrlr2p6",
+      "date": "2026-05-31",
+      "amount": 36,
+      "student": "Johinath",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -894,5 +903,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:39:37.031Z"
+  "lastUpdated": "2026-05-31T11:40:34.515Z"
 }
