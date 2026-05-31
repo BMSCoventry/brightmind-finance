@@ -818,6 +818,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptphsu2ewrp13",
+      "date": "2026-05-31",
+      "amount": 48,
+      "student": "Kabil",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -867,5 +876,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:38:00.227Z"
+  "lastUpdated": "2026-05-31T11:38:30.541Z"
 }
