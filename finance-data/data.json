@@ -750,7 +750,7 @@
     {
       "id": "mptpe3tibmgnx1",
       "date": "2026-05-25",
-      "amount": 30,
+      "amount": 45,
       "student": "Jeevan",
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
@@ -903,5 +903,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:43:21.860Z"
+  "lastUpdated": "2026-05-31T11:43:47.575Z"
 }
