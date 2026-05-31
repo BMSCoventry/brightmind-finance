@@ -575,6 +575,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mpto599tccuo8l",
+      "date": "2026-05-31",
+      "amount": 36,
+      "student": "Lithusha",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -624,5 +633,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:00:30.729Z"
+  "lastUpdated": "2026-05-31T11:00:45.698Z"
 }
