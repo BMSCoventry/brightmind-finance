@@ -719,6 +719,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpd0cw9v6uwa",
+      "date": "2026-05-19",
+      "amount": 30,
+      "student": "Kireshan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -768,5 +777,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:34:24.905Z"
+  "lastUpdated": "2026-05-31T11:34:47.011Z"
 }
