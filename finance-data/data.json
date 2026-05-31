@@ -665,6 +665,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mptpadxrokb18b",
+      "date": "2026-05-16",
+      "amount": 20,
+      "student": "Jebison",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -714,5 +723,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:32:30.368Z"
+  "lastUpdated": "2026-05-31T11:32:44.641Z"
 }
