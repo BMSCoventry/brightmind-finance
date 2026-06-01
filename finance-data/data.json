@@ -552,7 +552,7 @@
     {
       "id": "mpto3zjijp8oaa",
       "date": "2026-05-30",
-      "amount": 48,
+      "amount": 36,
       "student": "Shanjay",
       "paymentMethod": "cash",
       "paymentTiming": "deferred",
@@ -921,5 +921,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-01T19:10:38.044Z"
+  "lastUpdated": "2026-06-01T19:10:46.960Z"
 }
