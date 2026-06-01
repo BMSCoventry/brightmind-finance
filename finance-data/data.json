@@ -854,6 +854,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mpvl2uswtdmgek",
+      "date": "2026-05-31",
+      "amount": 48,
+      "student": "Shayeera",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -912,5 +921,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-05-31T11:45:21.133Z"
+  "lastUpdated": "2026-06-01T19:10:27.149Z"
 }
