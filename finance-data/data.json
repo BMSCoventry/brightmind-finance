@@ -597,7 +597,7 @@
     {
       "id": "mpto6221w9b94a",
       "date": "2026-05-30",
-      "amount": 48,
+      "amount": 36,
       "student": "Aarushon",
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
@@ -921,5 +921,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-01T19:10:27.149Z"
+  "lastUpdated": "2026-06-01T19:10:38.044Z"
 }
