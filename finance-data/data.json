@@ -863,6 +863,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mpvl468m2z2ttb",
+      "date": "2026-06-01",
+      "amount": 24,
+      "student": "Arnish",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -921,5 +930,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-01T19:11:01.188Z"
+  "lastUpdated": "2026-06-01T19:11:28.616Z"
 }
