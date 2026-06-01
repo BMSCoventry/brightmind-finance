@@ -687,7 +687,7 @@
     {
       "id": "mptpb9epzmvlxy",
       "date": "2026-05-28",
-      "amount": 45,
+      "amount": 30,
       "student": "Abshara",
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
@@ -921,5 +921,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-01T19:10:46.960Z"
+  "lastUpdated": "2026-06-01T19:11:01.188Z"
 }
