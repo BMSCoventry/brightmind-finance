@@ -849,7 +849,7 @@
     {
       "id": "mptpkghvrlr2p6",
       "date": "2026-05-31",
-      "amount": 24,
+      "amount": 36,
       "student": "Johinath",
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
@@ -930,5 +930,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-01T19:12:58.136Z"
+  "lastUpdated": "2026-06-01T19:13:14.443Z"
 }
