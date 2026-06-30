@@ -953,6 +953,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05uyoja9puf5",
+      "date": "2026-06-04",
+      "amount": 48,
+      "student": "Maani",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1020,5 +1029,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:42:22.305Z"
+  "lastUpdated": "2026-06-30T04:42:57.898Z"
 }
