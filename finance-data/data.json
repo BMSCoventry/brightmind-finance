@@ -1007,6 +1007,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05wrbnrp93bq",
+      "date": "2026-06-07",
+      "amount": 48,
+      "student": "Shayaan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1074,5 +1083,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:44:07.459Z"
+  "lastUpdated": "2026-06-30T04:44:21.674Z"
 }
