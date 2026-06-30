@@ -962,6 +962,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05v83ckkm7qt",
+      "date": "2026-06-05",
+      "amount": 48,
+      "student": "Kabil",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1029,5 +1038,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:42:57.898Z"
+  "lastUpdated": "2026-06-30T04:43:10.089Z"
 }
