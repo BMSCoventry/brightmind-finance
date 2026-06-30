@@ -1187,6 +1187,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr065dh9nk4xfb",
+      "date": "2026-06-07",
+      "amount": 36,
+      "student": "Jerisha",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1254,5 +1263,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:50:51.458Z"
+  "lastUpdated": "2026-06-30T04:51:03.641Z"
 }
