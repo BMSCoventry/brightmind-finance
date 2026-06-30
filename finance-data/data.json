@@ -1124,6 +1124,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr061rwyggglzl",
+      "date": "2026-06-11",
+      "amount": 48,
+      "student": "Abinash",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1191,5 +1200,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:48:02.072Z"
+  "lastUpdated": "2026-06-30T04:48:15.715Z"
 }
