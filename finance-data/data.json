@@ -890,6 +890,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05n4i3vun96y",
+      "date": "2026-06-07",
+      "amount": 27,
+      "student": "Krishika Nabika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -948,5 +957,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:36:21.526Z"
+  "lastUpdated": "2026-06-30T04:36:52.192Z"
 }
