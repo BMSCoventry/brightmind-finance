@@ -1151,6 +1151,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr063s6nx6ux06",
+      "date": "2026-06-09",
+      "amount": 40,
+      "student": "Kesini",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1218,5 +1227,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:49:36.673Z"
+  "lastUpdated": "2026-06-30T04:49:49.377Z"
 }
