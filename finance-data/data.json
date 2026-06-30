@@ -1133,6 +1133,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr06356a8r808h",
+      "date": "2026-06-11",
+      "amount": 48,
+      "student": "Tamzan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1200,5 +1209,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:48:15.715Z"
+  "lastUpdated": "2026-06-30T04:49:19.561Z"
 }
