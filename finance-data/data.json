@@ -1178,6 +1178,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr065433d4h5qa",
+      "date": "2026-06-07",
+      "amount": 30,
+      "student": "Jebison",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1245,5 +1254,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:50:34.074Z"
+  "lastUpdated": "2026-06-30T04:50:51.458Z"
 }
