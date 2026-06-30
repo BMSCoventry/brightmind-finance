@@ -944,6 +944,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05qq1zpbv7iv",
+      "date": "2026-06-23",
+      "amount": 27,
+      "student": "nabika kirishika",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1002,5 +1011,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:39:09.838Z"
+  "lastUpdated": "2026-06-30T04:39:40.106Z"
 }
