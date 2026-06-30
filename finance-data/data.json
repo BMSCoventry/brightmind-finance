@@ -1070,6 +1070,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05z2wos7d6xq",
+      "date": "2026-06-09",
+      "amount": 60,
+      "student": "Trizanth",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1137,5 +1146,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:45:43.706Z"
+  "lastUpdated": "2026-06-30T04:46:10.003Z"
 }
