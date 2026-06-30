@@ -998,6 +998,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05wgcypvkfyd",
+      "date": "2026-06-07",
+      "amount": 48,
+      "student": "Pavin",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1065,5 +1074,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:43:54.495Z"
+  "lastUpdated": "2026-06-30T04:44:07.459Z"
 }
