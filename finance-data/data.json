@@ -935,6 +935,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05q2p3u2sjw9",
+      "date": "2026-06-22",
+      "amount": 12,
+      "student": "Shayeera",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -993,5 +1002,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:38:48.656Z"
+  "lastUpdated": "2026-06-30T04:39:09.838Z"
 }
