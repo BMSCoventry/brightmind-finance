@@ -474,7 +474,7 @@
       "amount": 6.54,
       "student": "Refund",
       "paymentMethod": "bank",
-      "paymentTiming": "deferred",
+      "paymentTiming": "end_of_lesson",
       "notes": "Refund of MS office license"
     },
     {
@@ -1272,5 +1272,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:53:22.633Z"
+  "lastUpdated": "2026-06-30T04:53:27.000Z"
 }
