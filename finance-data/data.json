@@ -1025,6 +1025,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05xdr9xduvzo",
+      "date": "2026-06-07",
+      "amount": 48,
+      "student": "Sayuri",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1092,5 +1101,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:44:39.643Z"
+  "lastUpdated": "2026-06-30T04:44:50.743Z"
 }
