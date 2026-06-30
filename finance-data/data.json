@@ -1009,7 +1009,16 @@
       "category": "Other",
       "paymentMethod": "card",
       "notes": ""
+    },
+    {
+      "id": "mr05rs6z1iahuc",
+      "date": "2026-06-30",
+      "amount": 174.1,
+      "description": "salary",
+      "category": "Other",
+      "paymentMethod": "card",
+      "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:39:40.106Z"
+  "lastUpdated": "2026-06-30T04:40:29.516Z"
 }
