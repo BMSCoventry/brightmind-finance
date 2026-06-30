@@ -926,6 +926,15 @@
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05pmd2hmweix",
+      "date": "2026-06-20",
+      "amount": 44,
+      "student": "Jayden Hari",
+      "paymentMethod": "bank",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -984,5 +993,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:38:21.143Z"
+  "lastUpdated": "2026-06-30T04:38:48.656Z"
 }
