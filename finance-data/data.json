@@ -1097,6 +1097,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr060poikvx391",
+      "date": "2026-06-10",
+      "amount": 48,
+      "student": "Purviga",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1164,5 +1173,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:46:36.387Z"
+  "lastUpdated": "2026-06-30T04:47:26.168Z"
 }
