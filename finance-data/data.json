@@ -1169,6 +1169,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr064qo0mf9ld3",
+      "date": "2026-06-14",
+      "amount": 36,
+      "student": "Cherub",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1236,5 +1245,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:50:03.010Z"
+  "lastUpdated": "2026-06-30T04:50:34.074Z"
 }
