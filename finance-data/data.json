@@ -1043,6 +1043,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "mr05xw49yvinyu",
+      "date": "2026-06-08",
+      "amount": 36,
+      "student": "Johinath",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1110,5 +1119,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:45:02.495Z"
+  "lastUpdated": "2026-06-30T04:45:14.538Z"
 }
