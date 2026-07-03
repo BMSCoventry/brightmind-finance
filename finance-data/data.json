@@ -939,7 +939,7 @@
     {
       "id": "mr05q2p3u2sjw9",
       "date": "2026-06-22",
-      "amount": 12,
+      "amount": 36,
       "student": "Shayeera",
       "paymentMethod": "bank",
       "paymentTiming": "end_of_lesson",
@@ -1272,5 +1272,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-06-30T04:53:41.194Z"
+  "lastUpdated": "2026-07-03T10:42:08.332Z"
 }
