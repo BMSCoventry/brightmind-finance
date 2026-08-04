@@ -1403,6 +1403,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "msewik83xpelo9",
+      "date": "2026-07-11",
+      "amount": 78,
+      "student": "sabthami and sabharish",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1470,5 +1479,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:56:53.769Z"
+  "lastUpdated": "2026-08-04T16:57:37.730Z"
 }
