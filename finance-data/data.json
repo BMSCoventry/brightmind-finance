@@ -1232,6 +1232,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "5 lessons"
+    },
+    {
+      "id": "msew0bsx2ft509",
+      "date": "2026-07-04",
+      "amount": 88,
+      "student": "Shanjay and Sahana",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons each"
     }
   ],
   "expenses": [
@@ -1299,5 +1308,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:42:40.094Z"
+  "lastUpdated": "2026-08-04T16:43:27.002Z"
 }
