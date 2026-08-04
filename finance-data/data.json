@@ -1241,6 +1241,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons each"
+    },
+    {
+      "id": "msew1rgo8dpo4y",
+      "date": "2026-07-07",
+      "amount": 60,
+      "student": "Agaliya",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons"
     }
   ],
   "expenses": [
@@ -1308,5 +1317,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:43:27.002Z"
+  "lastUpdated": "2026-08-04T16:44:33.948Z"
 }
