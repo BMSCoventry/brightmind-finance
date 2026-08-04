@@ -1226,7 +1226,7 @@
     },
     {
       "id": "msevyqcwq2l13e",
-      "date": "2026-08-09",
+      "date": "2026-07-05",
       "amount": 60,
       "student": "Jefrina",
       "paymentMethod": "cash",
@@ -1299,5 +1299,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:42:12.552Z"
+  "lastUpdated": "2026-08-04T16:42:40.094Z"
 }
