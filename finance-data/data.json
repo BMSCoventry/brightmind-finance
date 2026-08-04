@@ -1385,6 +1385,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "msewgy6djuvaro",
+      "date": "2026-07-09",
+      "amount": 48,
+      "student": "abinash",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1452,5 +1461,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:56:07.921Z"
+  "lastUpdated": "2026-08-04T16:56:22.488Z"
 }
