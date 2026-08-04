@@ -1214,6 +1214,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons each"
+    },
+    {
+      "id": "msevy15pxb13m2",
+      "date": "2026-07-11",
+      "amount": 88,
+      "student": "Jayden , Hari",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons each"
     }
   ],
   "expenses": [
@@ -1281,5 +1290,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:41:08.204Z"
+  "lastUpdated": "2026-08-04T16:41:39.896Z"
 }
