@@ -1376,6 +1376,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "msewgmxpqu9j44",
+      "date": "2026-07-09",
+      "amount": 48,
+      "student": "aarujan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1443,5 +1452,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:55:45.841Z"
+  "lastUpdated": "2026-08-04T16:56:07.921Z"
 }
