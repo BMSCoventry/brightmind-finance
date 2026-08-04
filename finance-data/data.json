@@ -1205,6 +1205,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "msevxcpmwlqyxm",
+      "date": "2026-07-06",
+      "amount": 108,
+      "student": "Nabika kirishika",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons each"
     }
   ],
   "expenses": [
@@ -1272,5 +1281,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-07-03T10:47:55.329Z"
+  "lastUpdated": "2026-08-04T16:41:08.204Z"
 }
