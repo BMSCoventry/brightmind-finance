@@ -1268,6 +1268,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons each"
+    },
+    {
+      "id": "msew5k2gz9orp4",
+      "date": "2026-07-03",
+      "amount": 120,
+      "student": "rahul and Nilash",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "5 lessons each"
     }
   ],
   "expenses": [
@@ -1335,5 +1344,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:46:38.121Z"
+  "lastUpdated": "2026-08-04T16:47:30.985Z"
 }
