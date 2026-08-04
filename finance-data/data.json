@@ -1349,6 +1349,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "msewd13tnxz4nb",
+      "date": "2026-07-06",
+      "amount": 48,
+      "student": "Johinath",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1416,5 +1425,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:53:02.419Z"
+  "lastUpdated": "2026-08-04T16:53:19.672Z"
 }
