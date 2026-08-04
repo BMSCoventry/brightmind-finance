@@ -1367,6 +1367,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": ""
+    },
+    {
+      "id": "msewg5wf6f6k7g",
+      "date": "2026-07-08",
+      "amount": 48,
+      "student": "Kanishan",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1434,5 +1443,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:54:55.976Z"
+  "lastUpdated": "2026-08-04T16:55:45.841Z"
 }
