@@ -1250,6 +1250,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons"
+    },
+    {
+      "id": "msew2uz4mcos6c",
+      "date": "2026-07-10",
+      "amount": 108,
+      "student": "Abshara and Kirithick",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons each"
     }
   ],
   "expenses": [
@@ -1317,5 +1326,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:44:33.948Z"
+  "lastUpdated": "2026-08-04T16:45:25.159Z"
 }
