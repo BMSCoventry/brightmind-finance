@@ -1477,7 +1477,16 @@
       "category": "Other",
       "paymentMethod": "card",
       "notes": ""
+    },
+    {
+      "id": "msewjj0vbxyrv5",
+      "date": "2026-07-31",
+      "amount": 1493.5,
+      "description": "Salary",
+      "category": "Other",
+      "paymentMethod": "card",
+      "notes": "Bank transfer"
     }
   ],
-  "lastUpdated": "2026-08-04T16:57:37.730Z"
+  "lastUpdated": "2026-08-04T16:58:22.817Z"
 }
