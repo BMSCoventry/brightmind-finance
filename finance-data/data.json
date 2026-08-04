@@ -1277,6 +1277,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "5 lessons each"
+    },
+    {
+      "id": "msew6aec8wj80l",
+      "date": "2026-07-10",
+      "amount": 48,
+      "student": "Sakana",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons"
     }
   ],
   "expenses": [
@@ -1344,5 +1353,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:47:30.985Z"
+  "lastUpdated": "2026-08-04T16:48:05.114Z"
 }
