@@ -1313,6 +1313,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons"
+    },
+    {
+      "id": "msew8tyxzfd810",
+      "date": "2026-07-07",
+      "amount": 60,
+      "student": "Thirizanth",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons"
     }
   ],
   "expenses": [
@@ -1380,5 +1389,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:49:16.889Z"
+  "lastUpdated": "2026-08-04T16:50:03.792Z"
 }
