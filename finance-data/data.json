@@ -1322,6 +1322,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons"
+    },
+    {
+      "id": "msew9b5rao3kkr",
+      "date": "2026-07-07",
+      "amount": 60,
+      "student": "pranith",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons"
     }
   ],
   "expenses": [
@@ -1389,5 +1398,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:50:03.792Z"
+  "lastUpdated": "2026-08-04T16:50:26.070Z"
 }
