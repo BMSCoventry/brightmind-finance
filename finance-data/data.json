@@ -1259,6 +1259,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons each"
+    },
+    {
+      "id": "msew4f9yoooqml",
+      "date": "2026-07-14",
+      "amount": 88,
+      "student": "maani and neriyal",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons each"
     }
   ],
   "expenses": [
@@ -1326,5 +1335,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:45:25.159Z"
+  "lastUpdated": "2026-08-04T16:46:38.121Z"
 }
