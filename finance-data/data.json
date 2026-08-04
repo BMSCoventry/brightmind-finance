@@ -1286,6 +1286,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons"
+    },
+    {
+      "id": "msew6qgw87hkit",
+      "date": "2026-07-08",
+      "amount": 48,
+      "student": "Shobia",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": "4 lessons"
     }
   ],
   "expenses": [
@@ -1353,5 +1362,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:48:05.114Z"
+  "lastUpdated": "2026-08-04T16:48:25.943Z"
 }
