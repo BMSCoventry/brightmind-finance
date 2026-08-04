@@ -1340,6 +1340,15 @@
       "paymentMethod": "cash",
       "paymentTiming": "end_of_lesson",
       "notes": "4 lessons each"
+    },
+    {
+      "id": "msewcnsmoe19lg",
+      "date": "2026-07-06",
+      "amount": 48,
+      "student": "Jeyani",
+      "paymentMethod": "cash",
+      "paymentTiming": "end_of_lesson",
+      "notes": ""
     }
   ],
   "expenses": [
@@ -1407,5 +1416,5 @@
       "notes": ""
     }
   ],
-  "lastUpdated": "2026-08-04T16:51:05.544Z"
+  "lastUpdated": "2026-08-04T16:53:02.419Z"
 }
